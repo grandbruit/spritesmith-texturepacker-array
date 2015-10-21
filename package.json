@@ -1,6 +1,6 @@
 {
   "name": "spritesmith-texturepacker-array",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Export TexturePacker compatible sprite sheets with SpriteSmith using JSON array format",
   "author": {
     "name": "Mark Riedesel (original)",
