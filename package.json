@@ -1,13 +1,13 @@
 {
-	"name": "spritesmith-texturepacker",
+	"name": "spritesmith-texturepacker-array",
 	"version": "1.0.0",
-	"description": "Export TexturePacker compatible sprite sheets with SpriteSmith",
+	"description": "Export TexturePacker compatible sprite sheets with SpriteSmith using JSON array format",
 	"author": {
-		"name": "Mark Riedesel",
+		"name": "Mark Riedesel (original)",
 		"email": "mark@klowner.com",
 		"url": "https://github.com/Klowner/spritesmith-texturepacker"
 	},
-	"homepage": "https://github.com/Klowner/spritesmith-texturepacker",
+	"homepage": "https://github.com/joelmgallant/spritesmith-texturepacker-array",
 	"keywords": [
 		"texturepacker",
 		"spritesmith",
@@ -18,15 +18,15 @@
 	"main": "texturepacker.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Klowner/spritesmith-texturepacker"
+		"url": "https://github.com/joelmgallant/spritesmith-texturepacker-array"
 	},
 	"bugs": {
-		"url": "https://github.com/Klowner/spritesmith-texturepacker/issues"
+		"url": "https://github.com/joelmgallant/spritesmith-texturepacker-array/issues"
 	},
 	"maintainers": [
 		{
-			"name": "Klowner",
-			"email": "mark@klowner.com"
+			"name": "Joel Gallant",
+			"email": "joelmgallant@gmail.com"
 		}
 	]
 }
