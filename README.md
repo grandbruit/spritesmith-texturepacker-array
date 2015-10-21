@@ -1,5 +1,5 @@
 
-# SpriteSmith TexturePacker [![NPM Version][npm-image]][npm-url] [![NPM Downloads][npm-download-image]][npm-url]
+# SpriteSmith TexturePacker (JSON Array) [![NPM Version][npm-image]][npm-url] [![NPM Downloads][npm-download-image]][npm-url]
 
 TexturePacker export template for SpriteSmith - using the array format preferred by Phaser.io
 
