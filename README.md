@@ -1,7 +1,7 @@
 
 # SpriteSmith TexturePacker [![NPM Version][npm-image]][npm-url] [![NPM Downloads][npm-download-image]][npm-url]
 
-TexturePacker export template for SpriteSmith!
+TexturePacker export template for SpriteSmith - using the array format preferred by Phaser.io
 
 ## About
 
