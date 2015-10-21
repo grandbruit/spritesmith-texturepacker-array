@@ -39,7 +39,7 @@ npm install spritesmith-texturepacker-array
 ```
 
 ## License
-Copyright (c) 2014 Mark Riedesel
+Original Copyright (c) 2014 Mark Riedesel
 Licensed under the MIT license.
 
 [npm-url]: https://www.npmjs.org/package/spritesmith-texturepacker-array
