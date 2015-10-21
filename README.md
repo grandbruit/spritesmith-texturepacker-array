@@ -35,7 +35,7 @@ gulp.task('sprite', function () {
 With npm:
 
 ```
-npm install spritesmith-texturepacker
+npm install spritesmith-texturepacker-array
 ```
 
 ## License
