@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.12.1
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/joel/git/einstants-engine/lib/spritesmith-texturepacker-array',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/joel/git/einstants-engine/lib/spritesmith-texturepacker-array' ]
+11 verbose tarball /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package.tgz
+12 verbose folder /Users/joel/git/einstants-engine/lib/spritesmith-texturepacker-array
+13 info prepublish spritesmith-texturepacker-array@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package.tgz
+15 silly cache afterAdd spritesmith-texturepacker-array@1.0.0
+16 verbose afterAdd /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package/package.json written
+18 silly publish { name: 'spritesmith-texturepacker-array',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Export TexturePacker compatible sprite sheets with SpriteSmith using JSON array format',
+18 silly publish   author:
+18 silly publish    { name: 'Mark Riedesel',
+18 silly publish      email: 'mark@klowner.com',
+18 silly publish      url: 'original' },
+18 silly publish   homepage: 'https://github.com/joelmgallant/spritesmith-texturepacker-array',
+18 silly publish   keywords: [ 'texturepacker', 'spritesmith', 'export', 'sprite', '2d' ],
+18 silly publish   main: 'texturepacker.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/joelmgallant/spritesmith-texturepacker-array.git' },
+18 silly publish   bugs: { url: 'https://github.com/joelmgallant/spritesmith-texturepacker-array/issues' },
+18 silly publish   maintainers: [ { name: 'Joel Gallant', email: 'joelmgallant@gmail.com' } ],
+18 silly publish   readme: '\n# SpriteSmith TexturePacker (JSON Array) [![NPM Version][npm-image]][npm-url] [![NPM Downloads][npm-download-image]][npm-url]\n\nTexturePacker export template for SpriteSmith - using the array format preferred by Phaser.io\n\n## About\n\nThis very tiny module makes exporting TexturePacker compatible JSON sprite sheets\nwith [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith) or\n[gulp.spritesmith](https://github.com/twolfson/gulp.spritesmith). Just pass\nit along via the `cssTemplate` parameter.\n\n## Example\n\nBuilding a TexturePacker sprite sheet with [gulp](http://gulpjs.com).\n\n```js\n\nvar spritesmith = require(\'gulp.spritesmith\');\n\ngulp.task(\'sprite\', function () {\n\treturn gulp.src(\'src/gfx/scubaman/*.png\')\n\t\t.pipe(spritesmith({\n\t\t\timgName: "scubaman.png",\n\t\t\tcssName: "scubaman.json",\n\t\t\talgorithm: \'binary-tree\',\n\t\t\tcssTemplate: require(\'spritesmith-texturepacker-array\') // <-- this right here\n\t\t})\n\t\t.pipe(gulp.dest(\'./dist/gfx/\'));\n});\n```\n\n## Install\n\nWith npm:\n\n```\nnpm install spritesmith-texturepacker\n```\n\n## License\nCopyright (c) 2014 Mark Riedesel\nLicensed under the MIT license.\n\n[npm-url]: https://www.npmjs.org/package/spritesmith-texturepacker-array\n[npm-image]: http://img.shields.io/npm/v/spritesmith-texturepacker-array.svg?style=flat\n[npm-download-image]: http://img.shields.io/npm/dm/spritesmith-texturepacker-array.svg?style=flat\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'cb28bbbfe0e7aafb75379c20f663d31507fa10c4',
+18 silly publish   _id: 'spritesmith-texturepacker-array@1.0.0',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '7f15d0441e9fc82e577b629c1c760d189ba1bfd2',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name spritesmith-texturepacker-array
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/spritesmith-texturepacker-array
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/joel/.npm/spritesmith-texturepacker-array/1.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/spritesmith-texturepacker-array
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 14:45:46
+29 verbose request using bearer token for auth
+30 verbose request id d5353868e56a6d39
+31 http request PUT https://registry.npmjs.org/spritesmith-texturepacker-array
+32 http 403 https://registry.npmjs.org/spritesmith-texturepacker-array
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Wed, 21 Oct 2015 17:45:47 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-atl6232-ATL',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1445449546.740020,VS0,VE760' }
+34 verbose request invalidating /Users/joel/.npm/registry.npmjs.org/spritesmith-texturepacker-array on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : spritesmith-texturepacker-array
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:197:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1050:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:996:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 403
+38 verbose pkgid spritesmith-texturepacker-array
+39 verbose cwd /Users/joel/git/einstants-engine/lib/spritesmith-texturepacker-array
+40 error Darwin 15.0.0
+41 error argv "node" "/usr/local/bin/npm" "publish"
+42 error node v0.12.7
+43 error npm  v2.12.1
+44 error code E403
+45 error "You cannot publish over the previously published version 1.0.0." : spritesmith-texturepacker-array
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
