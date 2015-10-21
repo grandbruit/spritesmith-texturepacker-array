@@ -1,6 +1,6 @@
-function texturePackerTemplate (params) {
+function texturePackerTemplate(params) {
 	var items = params.items,
-		itemObj = { frames: {} },
+		itemObj = {frames: []},
 		frames = itemObj.frames,
 		item;
 
@@ -9,7 +9,7 @@ function texturePackerTemplate (params) {
 		itemObj.meta = {
 			app: "https://github.com/Ensighten/spritesmith",
 			image: item.image,
-			format: 'RGBA8888',
+			format: "RGBA8888",
 			size: {
 				w: item.total_width,
 				h: item.total_height
@@ -18,8 +18,10 @@ function texturePackerTemplate (params) {
 		};
 	}
 
+
 	items.forEach(function (item) {
-		frames[item.name] = {
+		frames.push({
+			filename: item.name + ".png",
 			frame: {
 				x: item.x,
 				y: item.y,
@@ -38,7 +40,7 @@ function texturePackerTemplate (params) {
 				w: item.width,
 				h: item.height
 			}
-		};
+		});
 	});
 
 	return JSON.stringify(itemObj, null, 4);
