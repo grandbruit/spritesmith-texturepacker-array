@@ -21,7 +21,7 @@ function texturePackerTemplate(params) {
 
 	items.forEach(function (item) {
 		frames.push({
-			filename: item.name + ".png",
+			filename: item.name,
 			frame: {
 				x: item.x,
 				y: item.y,
